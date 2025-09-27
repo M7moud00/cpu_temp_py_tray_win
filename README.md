@@ -1,6 +1,6 @@
 # CPU temperature Windows system tray
 
-## How to use
+## How to run the code?
 just clone the repo, install python and some python stuff like
 ```
 pip install pystray pythonnet 
@@ -19,6 +19,8 @@ pip install pyinstaller==6.* pystray pillow pythonnet pywin32
 pyinstaller --onefile --name CpuTempTray --windowed --icon=tray.ico --hidden-import=clr --add-binary ".\OpenHardwareMonitorLib.dll;." --clean tray.py
 
 ```
+
+## you can just use the prebuilt one in the releases section instead of setting up the python environment 
 
 ## How to make it start everytime you turn on your device?
 - Win + R
